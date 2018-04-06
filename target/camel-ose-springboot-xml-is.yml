@@ -1,0 +1,15 @@
+---
+apiVersion: "v1"
+kind: "List"
+items:
+- apiVersion: "v1"
+  kind: "ImageStream"
+  metadata:
+    name: "camel-ose-springboot-xml"
+  spec:
+    tags:
+    - from:
+        kind: "ImageStreamImage"
+        name: "camel-ose-springboot-xml@sha256:515753ef5c85f576692b6813fb3c541efe036a97d940ad5180778e3b901fb2dc"
+        namespace: "dfuse"
+      name: "latest"
